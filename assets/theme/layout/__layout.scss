@@ -19,7 +19,12 @@
         }
 
         &__search {
-            width: 22.25rem;
+            width: 16.25rem;
+
+            @include media-breakpoint-up(xl) {
+                width: 22.25rem;
+            }
+
             max-width: 100%;
         }
 
