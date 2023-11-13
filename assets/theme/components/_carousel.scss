@@ -14,4 +14,15 @@
             background-color: var(--bs-dark-blue);
         }
     }
+
+    &--absolute {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.news-card {
+    &__body {
+        padding: 1rem
+    }
 }
