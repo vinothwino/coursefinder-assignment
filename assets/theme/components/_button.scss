@@ -34,3 +34,14 @@
     vertical-align: middle;
     margin-left: 8%;
 }
+
+.btn-primary-inverse {
+    background-color: white;
+    color: var(--bs-primary);
+    font-weight: 600;
+
+    &:hover {
+        background-color: var(--bs-primary);
+        color: white;
+    }
+}

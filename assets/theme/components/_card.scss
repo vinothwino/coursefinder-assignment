@@ -72,3 +72,24 @@
         }
     }
 }
+
+.service-banner {
+    border: 0;
+    color: var(--bs-white);
+    border-radius: 10px;
+    background-image: var(--bs-gradient);
+
+    &__body {
+        padding: 28px 56px 46px 41px;
+    }
+
+    &__service-details {
+        @include media-breakpoint-up(lg) {
+            max-width: 50%;
+        }
+    }
+
+    &__desc {
+        opacity: 0.75;
+    }
+}
