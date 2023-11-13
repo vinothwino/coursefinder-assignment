@@ -6,6 +6,7 @@
     text-align: center;
     background-color: var(--bs-light-primary);
     position: relative;
+    display: inline-flex;
 
     &__body {
         padding: .5rem;
