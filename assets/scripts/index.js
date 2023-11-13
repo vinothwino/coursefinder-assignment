@@ -6,6 +6,6 @@ function handleNavToggler(){
 }
 navToggler.addEventListener('click', handleNavToggler)
 
-window.onunload=function(){
+window.addEventListener('beforeunload', function(){
     navToggler.removeEventListener('click',handleNavToggler)
-}
+})
