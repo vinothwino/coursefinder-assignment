@@ -1,6 +1,14 @@
-# coursefinder-assignment
+# Course Finder Assignment
 
-## Steps to start the server
+## Tech Stack
+
+* HTML
+* CSS
+* Javascript
+* Sass
+* Bootstrap
+
+## Command to start the dev server
 ```
 npm install
 npm run dev
