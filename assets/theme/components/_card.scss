@@ -1,0 +1,74 @@
+.status-card {
+    width: 137px;
+    height: 107px;
+    border: 0;
+    box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: var(--bs-light-primary);
+    position: relative;
+
+    &__body {
+        padding: .5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__value {
+        font-size: 30px;
+    }
+
+    &__label {
+        font-size: 14px;
+        color: var(--bs-secondary);
+    }
+
+    &__main-label {
+        background-color: var(--bs-white);
+        display: inline-block;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+
+    &--primary {
+        background-color: var(--bs-light-primary);
+
+        .status-card__value {
+            color: var(--bs-primary)
+        }
+    }
+
+    &--success {
+        background-color: var(--bs-light-success);
+
+        .status-card__value {
+            color: var(--bs-success)
+        }
+    }
+
+    &--warning {
+        background-color: var(--bs-light-warning);
+
+        .status-card__value {
+            color: var(--bs-warning)
+        }
+    }
+
+    &--danger {
+        background-color: var(--bs-light-danger);
+
+        .status-card__value {
+            color: var(--bs-danger)
+        }
+    }
+
+    &--grey {
+        background-color: var(--bs-light-grey);
+
+        .status-card__value {
+            color: var(--bs-grey)
+        }
+    }
+}

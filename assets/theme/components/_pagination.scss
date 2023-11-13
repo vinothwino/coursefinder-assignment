@@ -1,0 +1,36 @@
+.custom-pagination {
+    &__item {
+
+        &:not(:first-child) {
+            margin-left: 12px;
+        }
+    }
+
+    &__link {
+        &.active {
+            color: #0E1B2C !important;
+            border-color: #EBEBEB;
+            font-weight: 600;
+        }
+
+        &,
+        &.disabled {
+            background-color: white !important;
+        }
+
+        &,
+        &:hover,
+        &:focus-within {
+            border-radius: 50% !important;
+            width: 32px;
+            height: 32px;
+            font-size: 14px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            color: #3B3B3B;
+            border: 1px solid #EBEBEB;
+            box-shadow: none;
+        }
+    }
+}

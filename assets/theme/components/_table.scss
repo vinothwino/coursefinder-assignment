@@ -1,0 +1,20 @@
+.custom-table {
+    &__head {
+        background-color: var(--bs-gray-3) !important;
+        color: var(--bs-gray-2) !important;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    &__head,
+    &__cell {
+        font-size: 14px;
+        padding: 2rem 0;
+        overflow: hidden;
+    }
+
+    tbody>tr:last-child>&__cell {
+        border-bottom: 0 !important;
+    }
+
+}

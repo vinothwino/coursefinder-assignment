@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://www.coursefinder.ai/images/KClogo.ico">
+    <title>Course finder - Dashboard</title>
+    <link href="./assets/theme/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="app">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid" src="./assets/icons/svg/logo.svg" alt="Logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#course-finder-collapse" aria-controls="course-finder-collapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="mw-100 ms-lg-5 mt-4 mt-lg-0 nav__collapse collapse navbar-collapse justify-content-lg-between align-items-center"
+                    id="course-finder-collapse">
+                    <form class="mw-100 mr-0 me-4 d-flex nav__search" role="search">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <ul class="nav__list align-items-lg-center navbar-nav mb-2 mb-lg-0">
+                        <li class="d-none nav-item d-lg-flex align-items-center flex-nowrap">
+                            <img src="./assets/icons/svg/horn.svg" />
+                            <a class="text-nowrap nav-link underline active" aria-current="page" href="#">
+                                <u>Whats New?</u>
+                            </a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <button class="nav__notify-btn rounded-3 btn btn-light-icon">
+                                <img rounded-3" width="24px" height="24px" src="./assets/icons/svg/bell.svg" alt="">
+                                <span class="alert-badge">2</span>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button
+                                    class="relative px-0 btn btn-transparent dropdown-toggle dropdown-toggle--chevron-icon"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dikha Goel
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-lg-end" data-bs-popper="absolute">
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex overflow-hidden main-wrapper">
+            <aside class="sidebar d-none d-md-flex flex-column bg-white">
+                <nav id="sidebar-nav"
+                    class="list-group tab-nav tab-nav--collapsed flex-grow-1 px-3 overflow-x-auto custom-scrollbar"
+                    id="list-tab" role="tablist">
+                    <a class="list-group-item tab-nav__link list-group-item-action active" data-bs-toggle="list"
+                        href="#section-dashboard" role="tab" aria-controls="section-dashboard">
+                        <img src="./assets/icons/svg/home.svg" alt="dashboard" />
+                        <span class="tab-nav__link-label">Home</span>
+                    </a>
+                    <a class="list-group-item tab-nav__link list-group-item-action" data-bs-toggle="list"
+                        href="#section-students" role="tab" aria-controls="section-students">
+                        <img src="./assets/icons/svg/cap.svg" alt="students" />
+                        <span class="tab-nav__link-label">Students</span>
+                    </a>
+                    <a class="list-group-item tab-nav__link list-group-item-action" data-bs-toggle="list"
+                        href="#section-application" role="tab" aria-controls="section-application">
+                        <img src="./assets/icons/svg/file.svg" alt="application" />
+                        <span class="tab-nav__link-label">Applications</span>
+                    </a>
+
+                    <a class="list-group-item tab-nav__link list-group-item-action" data-bs-toggle="list"
+                        href="#section-course" role="tab" aria-controls="section-course">
+                        <img src="./assets/icons/svg/search.svg" alt="course" />
+                        <span class="tab-nav__link-label">Search Course</span>
+                    </a>
+                    <a class="list-group-item tab-nav__link list-group-item-action" data-bs-toggle="list"
+                        href="#section-wallet" role="tab" aria-controls="section-wallet">
+                        <img src="./assets/icons/svg/wallet.svg" alt="wallet" />
+                        <span class="tab-nav__link-label">Wallet</span>
+                    </a>
+                    <a class="list-group-item tab-nav__link list-group-item-action" data-bs-toggle="list"
+                        href="#section-commission" role="tab" aria-controls="section-commission">
+                        <img src="./assets/icons/svg/commission.svg" alt="commission" />
+                        <span class="tab-nav__link-label">Commission Payments</span>
+                    </a>
+                    <a class="list-group-item tab-nav__link list-group-item-action" data-bs-toggle="collapse"
+                        href="#allied-services" role="button" aria-expanded="false" aria-controls="allied-services">
+                        <img src=" ./assets/icons/svg/service.svg" alt="services" />
+                        <span class="tab-nav__link-label">
+                            Allied services
+                            <img class="align-middle ms-2" src="./assets/icons/svg/chevron-grey-down.svg"
+                                alt="chevron" />
+                        </span>
+                    </a>
+                    <div class="collapse tab-nav__collapsed" id="allied-services">
+                        <a class="btn btn-link d-block text-start" role="button">
+                            <span class="tab-nav__link-label">Link 1</span>
+                        </a>
+                        <a class="btn btn-link d-block text-start" role="button">
+                            <span class="tab-nav__link-label">Link 2</span>
+                        </a>
+                    </div>
+                    <a class="list-group-item tab-nav__link list-group-item-action" data-bs-toggle="list"
+                        href="#section-resouces" role="tab" aria-controls="section-resouces">
+                        <img src="./assets/icons/svg/info.svg" alt="resouces" />
+                        <span class="tab-nav__link-label">Learning Resources</span>
+                    </a>
+                    <a class="list-group-item tab-nav__link list-group-item-action" data-bs-toggle="collapse"
+                        href="#quick-links" role="button" aria-expanded="false" aria-controls="quick-links">
+                        <img src="./assets/icons/svg/quick-link.svg" alt="links" />
+                        <span class="tab-nav__link-label">
+                            Quick Links
+                            <img class="align-middle ms-2" src="./assets/icons/svg/chevron-grey-down.svg"
+                                alt="chevron" />
+                        </span>
+                    </a>
+                    <div class="collapse tab-nav__collapsed" id="quick-links">
+                        <a class="btn btn-link d-block text-start" data-bs-toggle="collapse" href="#collapseExample"
+                            role="button">
+                            <span class="tab-nav__link-label">Link 1</span>
+                        </a>
+                        <a class="btn btn-link d-block text-start" data-bs-toggle="collapse" href="#collapseExample"
+                            role="button">
+                            <span class="tab-nav__link-label">Link 2</span>
+                        </a>
+                    </div>
+                    <a class="list-group-item tab-nav__link mt-auto list-group-item-action" id="list-profile-list"
+                        data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+                        <img src="./assets/icons/svg/file.svg" alt="dashboard" />
+                        <span class="tab-nav__link-label">Submit Feedback</span>
+                    </a>
+                </nav>
+                <div id="sidebar-nav-toggler" class="sidebar__toggler">
+                    <img src="./assets/icons/svg/chevron-left.svg" alt="">
+                </div>
+            </aside>
+            <main class="main flex-1">
+                <div class="tab-content" id="nav-tabContent">
+                    <section class="tab-pane fade show active" id="section-dashboard" role="tabpanel"
+                        aria-labelledby="dashboard">
+                        <div
+                            class="mb-36 d-flex flex-column align-items-stretch align-items-lg-center flex-lg-row justify-content-between">
+                            <h4 class="mb-3 mb-lg-0 text-black">Hey, Good Morning <strong>Diksha!</strong></h4>
+                            <div class="d-grid gap-3 d-md-flex">
+                                <button class="btn btn-outline-primary ">Refresh Dashboard</button>
+                                <button class="btn btn-primary">Register Student</button>
+                            </div>
+                        </div>
+                        <div class="container-fluid p-0 mt-">
+                            <div class="row ">
+                                <div class="col-lg-9 col-12">
+                                    <form class="mb-36 card border-0 needs-validation shadow-1 rounded-3">
+                                        <div class="card-body p-20">
+                                            <div class="container-fluid">
+                                                <div class="row gx-3 gy-3">
+                                                    <div class="col-lg-4 col-md-6 col-12">
+                                                        <div class="input-group has-validation">
+                                                            <select name="year" class="form-select form-select-md"
+                                                                required>
+                                                                <option selected selected disabled value="">Year
+                                                                </option>
+                                                                <option value="2023">2023</option>
+                                                                <option value="2022">2022</option>
+                                                                <option value="2021">2021</option>
+                                                            </select>
+                                                            <div class="invalid-feedback">
+                                                                Year is required
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-12">
+                                                        <div class="input-group has-validation">
+                                                            <input name="dateCreated" required type="date"
+                                                                class="form-control" placeholder="Date Created" />
+                                                            <div class="invalid-feedback">
+                                                                Created date is required
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-12">
+                                                        <div class="input-group has-validation">
+                                                            <select name="intake" class="form-select form-select-md"
+                                                                required>
+                                                                <option selected disabled value="">Select intake
+                                                                </option>
+                                                                <option value="Spring">Spring</option>
+                                                                <option value="fall">Fall</option>
+                                                                <option value="summer">Summer</option>
+                                                                <option>test</option>
+                                                            </select>
+                                                            <div class="invalid-feedback">
+                                                                Intake is required
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-group has-validation">
+                                                            <select name="country" class="form-select form-select-md"
+                                                                required>
+                                                                <option selected disabled value="">Countries</option>
+                                                                <option value="usa">USA</option>
+                                                                <option value="canada">Canada</option>
+                                                                <option value="aus">Australi</option>
+                                                            </select>
+                                                            <div class="invalid-feedback">
+                                                                Countries is required
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-3 col-lg-4 col-12">
+                                                        <button type="submit"
+                                                            class="w-100 btn btn-outline-primary">Apply
+                                                            Filters</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="row mb-36 justify-content-center justify-content-md-start">
+                                        <div class="col-auto">
+                                            <div class="card status-card mb-4 status-card--primary">
+                                                <div class="card-body status-card__body">
+                                                    <strong class="status-card__value">18</strong>
+                                                    <span class="status-card__label">Conditional</span>
+                                                </div>
+                                                <span
+                                                    class="status-badge status-badge--primary status-card__main-label">Offer
+                                                    letter</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="card status-card mb-4 status-card--success">
+                                                <div class="card-body status-card__body">
+                                                    <strong class="status-card__value">18</strong>
+                                                    <span class="status-card__label">Un-Conditional</span>
+                                                </div>
+                                                <span
+                                                    class="status-badge status-badge--success status-card__main-label">Offer
+                                                    letter</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="card status-card mb-4 status-card--warning">
+                                                <div class="card-body status-card__body">
+                                                    <strong class="status-card__value">30</strong>
+                                                    <span class="status-card__label">Payment Received</span>
+                                                </div>
+                                                <span
+                                                    class="status-badge status-badge--warning status-card__main-label">
+                                                    All Country
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="card status-card mb-4 status-card--danger">
+                                                <div class="card-body status-card__body">
+                                                    <strong class="status-card__value">8</strong>
+                                                    <span class="status-card__label">Payment Received</span>
+                                                </div>
+                                                <span
+                                                    class="status-badge status-badge--danger status-card__main-label">Offer
+                                                    letter</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="card status-card mb-4 status-card--grey">
+                                                <div class="card-body status-card__body">
+                                                    <strong class="status-card__value">8</strong>
+                                                    <span class="status-card__label">Visa Received</span>
+                                                </div>
+                                                <span class="status-badge status-badge--grey status-card__main-label">
+                                                    Offer letter
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-36 card border-0 shadow-1 rounded-3">
+                                        <div class="card-body p-20">
+                                            <div class="container-fluid">
+                                                <h6 class="fw-bold mb-14">Applications</h6>
+                                                <div class="mb-14 nav flex-column nav-pills d-flex nav-pills--primary-lighten flex-md-row"
+                                                    id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                    <button class="nav-link active">Pending on Me (15)</button>
+                                                    <button class="nav-link">Lorem Ipsum (15)</button>
+                                                    <button class="nav-link">Lorem Ipsum (18)</button>
+                                                </div>
+                                                <div class="mb-3 table-responsive">
+                                                    <table class="table custom-table  table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="custom-table__head">
+                                                                    <div class="d-inline-flex align-items-center">
+                                                                        <span class="vertical-middle">Ack.no</span>
+                                                                        &nbsp;
+                                                                        <img class="vertical-middle" alt="sort-icon"
+                                                                            src="./assets/icons/svg/sortby-arrow.svg" />
+                                                                    </div>
+                                                                </th>
+                                                                <th class="custom-table__head">
+                                                                    <div class="d-inline-flex align-items-center">
+                                                                        <span class="vertical-middle">Student
+                                                                            name</span>
+                                                                        &nbsp;
+                                                                        <img class="vertical-middle" alt="sort-icon"
+                                                                            src="./assets/icons/svg/sortby-arrow.svg" />
+                                                                    </div>
+                                                                </th>
+                                                                <th class="custom-table__head">
+                                                                    <div class="d-inline-flex align-items-center">
+                                                                        <span class="vertical-middle">University</span>
+                                                                        &nbsp;
+                                                                        <img class="vertical-middle" alt="sort-icon"
+                                                                            src="./assets/icons/svg/sortby-arrow.svg" />
+                                                                    </div>
+                                                                </th>
+                                                                <th class="custom-table__head">
+                                                                    <div class="d-inline-flex align-items-center">
+                                                                        <span class="vertical-middle">Program</span>
+                                                                        &nbsp;
+                                                                        <img class="vertical-middle" alt="sort-icon"
+                                                                            src="./assets/icons/svg/sortby-arrow.svg" />
+                                                                    </div>
+                                                                </th>
+                                                                <th class="custom-table__head">
+                                                                    <div class="d-inline-flex align-items-center">
+                                                                        <span class="vertical-middle">Pending
+                                                                            Since</span>
+                                                                        &nbsp;
+                                                                        <img class="vertical-middle" alt="sort-icon"
+                                                                            src="./assets/icons/svg/sortby-arrow.svg" />
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="custom-table__cell">117110/22-23</td>
+                                                                <td class="d-flex flex-column custom-table__cell">
+                                                                    <span>Rishi Joshi</span>
+                                                                    <span
+                                                                        class="text-gray-2">rishijoshi@gmail.com</span>
+                                                                </td>
+                                                                <td class="custom-table__cell">Sheffield Hallam...</td>
+                                                                <td class="custom-table__cell">Msc Internatio...</td>
+                                                                <td class="d-flex flex-column custom-table__cell">
+                                                                    <span>1 Day</span>
+                                                                    <span class="text-gray-2">12 Dec 2022</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="custom-table__cell">117110/22-23</td>
+                                                                <td class="d-flex flex-column custom-table__cell">
+                                                                    <span>Rishi Joshi</span>
+                                                                    <span
+                                                                        class="text-gray-2">rishijoshi@gmail.com</span>
+                                                                </td>
+                                                                <td class="custom-table__cell">Sheffield Hallam...</td>
+                                                                <td class="custom-table__cell">Msc Internatio...</td>
+                                                                <td class="d-flex flex-column custom-table__cell">
+                                                                    <span>1 Day</span>
+                                                                    <span class="text-gray-2">12 Dec 2022</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="custom-table__cell">117110/22-23</td>
+                                                                <td class="d-flex flex-column custom-table__cell">
+                                                                    <span>Rishi Joshi</span>
+                                                                    <span
+                                                                        class="text-gray-2">rishijoshi@gmail.com</span>
+                                                                </td>
+                                                                <td class="custom-table__cell">Sheffield Hallam...</td>
+                                                                <td class="custom-table__cell">Msc Internatio...</td>
+                                                                <td class="d-flex flex-column custom-table__cell">
+                                                                    <span>1 Day</span>
+                                                                    <span class="text-gray-2">12 Dec 2022</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <nav aria-label="Applications table pagination">
+                                                    <ul class="pagination custom-pagination justify-content-center">
+                                                        <li class="page-item custom-pagination__item disabled">
+                                                            <a class="page-link page-link custom-pagination__link border-0 "
+                                                                href="#" tabindex="-1" aria-disabled="true">
+                                                                <img src="./assets/icons/svg/chevron-left.svg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li class="page-item custom-pagination__item"><a
+                                                                class="page-link page-link custom-pagination__link active"
+                                                                href="#">1</a></li>
+                                                        <li class="page-item custom-pagination__item"><a
+                                                                class="page-link page-link custom-pagination__link"
+                                                                href="#">2</a></li>
+                                                        <li class="page-item custom-pagination__item"><a
+                                                                class="page-link page-link custom-pagination__link"
+                                                                href="#">3</a></li>
+                                                        <li class="page-item custom-pagination__item">
+                                                            <a class="page-link page-link custom-pagination__link border-0 text-primary "
+                                                                href="#"><img src="./assets/icons/svg/chevron-right.svg"
+                                                                    alt=""></a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-12"></div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section class="tab-pane fade show" id="section-students" role="tabpanel"
+                        aria-labelledby="students">
+                        Students
+                    </section>
+                    <section class="tab-pane fade show" id="section-application" role="tabpanel"
+                        aria-labelledby="application">
+                        Applications
+                    </section>
+                    <section class="tab-pane fade show" id="section-course" role="tabpanel" aria-labelledby="course">
+                        Courses
+                    </section>
+                    <section class="tab-pane fade show" id="section-wallet" role="tabpanel" aria-labelledby="wallet">
+                        Wallet
+                    </section>
+                    <section class="tab-pane fade show" id="section-commission" role="tabpanel"
+                        aria-labelledby="wallet">
+                        Commission
+                    </section>
+                    <section class="tab-pane fade show" id="section-services" role="tabpanel" aria-labelledby="wallet">
+                        Allied Services
+                    </section>
+                    <section class="tab-pane fade show" id="section-resouces" role="tabpanel" aria-labelledby="wallet">
+                        Learning Resources
+                    </section>
+                    <section class="tab-pane fade show" id="section-links" role="tabpanel" aria-labelledby="wallet">
+                        Learning Resources
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src=" ./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="./assets/scripts/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.btn-light-icon {
+
+    &,
+    &:hover,
+    &:active {
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, .3);
+    }
+}
+
+.btn-transparent {
+
+    &,
+    &:hover,
+    &:active,
+    &:focus-within,
+    &:focus-visible {
+        background-color: transparent;
+        color: white !important;
+        border: none;
+    }
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+}
+
+.dropdown-toggle--chevron-icon::after {
+    border: none;
+    height: 24px;
+    width: 24px;
+    background-image: url('/assets/icons/svg/chevron-down.svg');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 8%;
+}

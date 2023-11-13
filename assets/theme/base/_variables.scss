@@ -1,0 +1,41 @@
+:root {
+    --bs-blue: #226CF5;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #FF1A2F;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #EBB925;
+    --bs-green: #41A155;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #3B3B3B;
+    --bs-light-grey: #EEE;
+    --bs-gray-dark: #343a40;
+    --bs-gray-2: #939393;
+    --bs-gray-3: #EBEEF1;
+    --bs-light-primary: #D4E3FF;
+    --bs-primary: #226CF5;
+    --bs-secondary: #3B3B3B;
+    --bs-success: #41A155;
+    --bs-light-sucess: #EBFFEF;
+    --bs-info: #2f3b3e;
+    --bs-warning: #EBB925;
+    --bs-light-warning: #FFF6DB;
+    --bs-danger: #FF1A2F;
+    --bs-light-danger: #FFF0F2;
+    --bs-light: #f8f9fa;
+    --bs-dark: #0E1B2C;
+    --bs-font-sans-serif: 'DM Sans', sans-serif;
+    --bs-border-radius: 0.3125rem;
+    --bs-gradient: linear-gradient(268deg, #00163E 9.08%, #1347A6 88.55%, #226CF5 114.71%);
+    --bs-body-color: #3B3B3B;
+    --bs-list-group-color: var(--bs-secondary) --bs-input-btn-padding-y:10px;
+    // --bs-input-btn-padding-x: 20px;
+}
+
+$input-btn-font-size: 14px;
+
+$input-btn-padding-y: 10px;
+$input-btn-padding-x: 20px;
